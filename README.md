@@ -58,9 +58,9 @@ Potential function for attractive/repulsive forces:
 ### Aggregation and Dispersion Behavior  
 
 #### Aggregation using 16 AUVs inside a square boundary  
-[![Aggregation Video](Videos/Aggregation.mp4)](https://drive.google.com/file/d/1gvD8SlYGDpqKb1Qagcyr6S5mC70ELUec/view?usp=sharing)  
+[![Aggregation Video](Aggregation.mp4)](https://drive.google.com/file/d/1gvD8SlYGDpqKb1Qagcyr6S5mC70ELUec/view?usp=sharing)  
 [Download Video](https://drive.google.com/file/d/1gvD8SlYGDpqKb1Qagcyr6S5mC70ELUec/view?usp=sharing)
 
 #### Dispersion using 16 AUVs inside a square boundary  
-[![Dispersion Video](Videos/Dispersion.mp4)](https://drive.google.com/file/d/1ScYbKrkACsOV50BlK3L_imkKiRjoQO-9/view?usp=sharing)  
+[![Dispersion Video](Dispersion.mp4)](https://drive.google.com/file/d/1ScYbKrkACsOV50BlK3L_imkKiRjoQO-9/view?usp=sharing)  
 [Download Video](https://drive.google.com/file/d/1ScYbKrkACsOV50BlK3L_imkKiRjoQO-9/view?usp=sharing)
