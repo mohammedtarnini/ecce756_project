@@ -1,69 +1,75 @@
 # ECCE 756 Robotic Perception Project
 
-![KU Logo](Images/kulogo.png)
+![KU Logo](kulogo.png)
 
-## Submitted By
+## Submitted By:
 **Mohammed Tarnini**  
-**ID:** 100049735  
+**100049735**
 
-**Submitted To**  
-Prof. Jorge Dias  
+## Submitted To:
+**Prof. Jorge Dias**
 
 ---
 
 ## Part A: Kalman Filter and Particle Filter Tracking on ROAD-UAE Dataset
 
-### Kalman Filter Tracking  
-[![Kalman Filter Video](Videos/Kalman_Filter.mp4)](https://drive.google.com/file/d/1SLc1VCgwfsk34ouQoHYq00SYQyQ3As6s/view?usp=drive_link)  
-[Download Video](https://drive.google.com/file/d/1SLc1VCgwfsk34ouQoHYq00SYQyQ3As6s/view?usp=drive_link)
+### Kalman Filter Tracking
+<video controls>
+    <source src="Kalman_Filter.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+</video>  
+[Download Video](Kalman_Filter.mp4)
 
-### Particle Filter Tracking  
-[![Particle Filter Video](Videos/Particle_Filter.mp4)](https://drive.google.com/file/d/1nFS2QjcDpSSR-EIi0hthBR1Ar6dSCexW/view?usp=sharing)  
-[Download Video](https://drive.google.com/file/d/1nFS2QjcDpSSR-EIi0hthBR1Ar6dSCexW/view?usp=sharing)
+### Particle Filter Tracking
+<video controls>
+    <source src="Particle_Filter.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+</video>  
+[Download Video](Particle_Filter.mp4)
 
 ---
 
 ## Part B: Underwater Aggregation and Dispersion of AUVs using Event-based Detection
 
-### Detecting using events from v2e toolbox (inaccurate and unusable)  
-[![v2e Demo Video](Videos/v2e_track_demo.mp4)](https://drive.google.com/file/d/1Hj5_Zy-ciNWZ3rUnNMphh3oVcWEQtIhW/view?usp=sharing)  
-[Download Video](https://drive.google.com/file/d/1Hj5_Zy-ciNWZ3rUnNMphh3oVcWEQtIhW/view?usp=sharing)
+### Detecting using events from v2e toolbox (inaccurate and unusable)
+<video controls>
+    <source src="v2e_track_demo.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+</video>  
+[Download Video](v2e_track_demo.mp4)
 
-### Detecting using events from SpikeCoding toolbox (more accurate and usable)  
-[![SpikeCoding Demo Video](Videos/SpikeCoding_track_demo.mp4)](https://drive.google.com/file/d/1jwOVhf8d_WTJmg7xIYKtAuCg_U-rrwmq/view?usp=sharing)  
-[Download Video](https://drive.google.com/file/d/1jwOVhf8d_WTJmg7xIYKtAuCg_U-rrwmq/view?usp=sharing)
+### Detecting using events from SpikeCoding toolbox (more accurate and usable)
+<video controls>
+    <source src="SpikeCoding_track_demo.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+</video>  
+[Download Video](SpikeCoding_track_demo.mp4)
+
+### Using Bounding Boxes: Calculating States of Detected AUVs
+![Bounding Box States](states.png)
+
+- \( d_A = \frac{h_A}{\beta} \)
+- \( \beta = \frac{h_b}{h_f} \cdot FOV_v \)
+- \( \Delta \theta = \frac{x_c}{w_f} \cdot FOV_h \)
+
+### Lennard-Jones Potential Function
+![Forces](Forces.png)
+
+- \( V = 4\varepsilon \left[ \left( \frac{\sigma}{r} \right)^{2n} - \left( \frac{\sigma}{r} \right)^n \right] \)
+- \( F = \frac{dV}{dr} = 4\varepsilon \left[ -2n\left( \frac{\sigma^{2n}}{r^{2n+1}} \right) + n\left( \frac{\sigma^n}{r^{2n+1}} \right) \right] \)
 
 ---
 
-### Calculating States of Detected AUVs  
-![State Calculation](Images/states.png)  
-
-Formulas:  
-- \( d_\text{A} = \frac{h_\text{A}}{\beta} \)  
-- \( \beta = \frac{h_\text{b}}{h_\text{f}} \cdot FOV_\text{v} \)  
-- \( \Delta \theta = \frac{x_\text{c}}{w_\text{f}} \cdot FOV_\text{h} \)  
-
----
-
-### Lennard-Jones Potential Function  
-
-Potential function for attractive/repulsive forces:  
-- \( V = 4\varepsilon\left[\left(\frac{\sigma}{r}\right)^{2n} - \left(\frac{\sigma}{r}\right)^n\right] \)  
-- \( F = \frac{dV}{dr} = 4\varepsilon\left[-2n\left(\frac{\sigma^{2n}}{r^{2n+1}}\right) + n\left(\frac{\sigma^n}{r^{2n+1}}\right)\right] \)  
-
-![Force Calculation](Images/Forces.png)
-
----
-
-### Aggregation and Dispersion Behavior  
-
-#### Aggregation using 16 AUVs inside a square boundary  
+### Aggregation using 16 AUVs inside a square boundary
 <video controls>
     <source src="Aggregation.mp4" type="video/mp4">
     Your browser does not support the video tag.
-</video>
-[Download Video](https://drive.google.com/file/d/1gvD8SlYGDpqKb1Qagcyr6S5mC70ELUec/view?usp=sharing)
+</video>  
+[Download Video](Aggregation.mp4)
 
-#### Dispersion using 16 AUVs inside a square boundary  
-[![Dispersion Video](Dispersion.mp4)](https://drive.google.com/file/d/1ScYbKrkACsOV50BlK3L_imkKiRjoQO-9/view?usp=sharing)  
-[Download Video](https://drive.google.com/file/d/1ScYbKrkACsOV50BlK3L_imkKiRjoQO-9/view?usp=sharing)
+### Dispersion using 16 AUVs inside a square boundary
+<video controls>
+    <source src="Dispersion.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+</video>  
+[Download Video](Dispersion.mp4)
