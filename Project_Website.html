@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ECCE 756 Project</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+        h1 {
+            text-align: center;
+        }
+        h2 {
+            font-size: 2em;
+            text-align: center;
+            margin-top: 20px;
+        }
+        .content {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        .images, .videos {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+        .images img, .videos video {
+            max-width: 100%;
+            height: auto;
+            margin: 10px;
+        }
+        .text-section {
+            margin-top: 20px;
+        }
+        .links a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        .links a:hover {
+            text-decoration: underline;
+        }
+        .submission-info {
+            text-align: center;
+            font-style: italic;
+            margin-top: 10px;
+        }
+        hr {
+            border: 1px solid #ccc;
+            margin: 20px 0;
+        }
+    </style>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+
+    <div class="content">
+        <div style="text-align: center;">
+            <img src="Images\kulogo.png" alt="Description of the image" style="max-width: 30%; height: auto;">
+        </div>
+
+        <h1>ECCE 756 Robotic Perception Project</h1>
+
+        <div class="submission-info">
+            <p>Submitted By: Mohammed Tarnini 100049735</p>
+            <p>Submitted To: Prof. Jorge Dias</p>
+        </div>
+
+        <hr>
+
+        <h2>Part A: Kalman Filter and Particle Filter Tracking on ROAD-UAE Dataset</h2>
+
+        <div class="videos" style="display: flex; justify-content: space-around; text-align: center;">
+            <div style="max-width: 45%; margin: 10px;">
+                <h2 style="font-size: 1.2em;">Kalman Filter Tracking</h2>
+                <video controls style="width: 100%; height: auto;">
+                    <source src="Videos/Kalman_Filter.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="links">
+                    <a href="https://drive.google.com/file/d/1SLc1VCgwfsk34ouQoHYq00SYQyQ3As6s/view?usp=drive_link" target="_blank">Download Video</a>
+                </div>
+            </div>
+            <div style="max-width: 45%; margin: 10px;">
+                <h2 style="font-size: 1.2em;">Particle Filter Tracking</h2>
+                <video controls style="width: 100%; height: auto;">
+                    <source src="Videos/Particle_Filter.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="links">
+                    <a href="https://drive.google.com/file/d/1nFS2QjcDpSSR-EIi0hthBR1Ar6dSCexW/view?usp=sharing" target="_blank">Download Video</a>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="text-section">
+            <h2>Part B: Underwater Aggregation and Dispersion of AUVs using Event-based Detection</h2>
+        </div>
+
+        <div class="videos" style="display: flex; justify-content: space-around; text-align: center;">
+            <div style="max-width: 45%; margin: 10px;">
+                <h2 style="font-size: 1.2em;">Detecting using events from v2e toolbox (inaccurate and unusable)</h2>
+                <video controls style="width: 100%; height: auto;">
+                    <source src="Videos/v2e_track_demo.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="links">
+                    <a href="https://drive.google.com/file/d/1Hj5_Zy-ciNWZ3rUnNMphh3oVcWEQtIhW/view?usp=sharing" target="_blank">Download Video</a>
+                </div>
+            </div>
+            <div style="max-width: 45%; margin: 10px;">
+                <h2 style="font-size: 1.2em;">Detecting using events from SpikeCoding toolbox (more accurate and usable)</h2>
+                <video controls style="width: 100%; height: auto;">
+                    <source src="Videos/SpikeCoding_track_demo.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="links">
+                    <a href="https://drive.google.com/file/d/1jwOVhf8d_WTJmg7xIYKtAuCg_U-rrwmq/view?usp=sharing" target="_blank">Download Video</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-section">
+            <h2 style="font-size: 1.2em;">Using bounding boxes, states of detected AUVs can be calculated using the following:</h2>
+        </div>
+
+        <div style="text-align: center; margin-top: 20px;">
+            <img src="Images/states.png" alt="Description of the image" style="max-width: 50%; height: auto;">
+        </div>
+
+        <div class="text-section">
+            <p>
+                $$ d_\text{A} = \frac{h_\text{A}}{\beta} $$
+            </p>
+            <p>
+                $$ \beta = \frac{h_\text{b}}{h_\text{f}} \cdot FOV_\text{v} $$
+            </p>
+            <p>
+                $$ \Delta \theta = \frac{x_\text{c}}{w_\text{f}} \cdot FOV_\text{h} $$
+            </p>
+        </div>
+
+        <div class="text-section">
+            <h2 style="font-size: 1.2em;">Lennard-Jones Potential Function seen below is used to calculate attractive/repulsive forces on AUVs:</h2>
+        </div>
+
+        <div class="text-section">
+            <p>
+                $$ V = 4\varepsilon\left[\left(\frac{\sigma}{r}\right)^{2n} - \left(\frac{\sigma}{r}\right)^n\right] $$
+            </p>
+            <p>
+                $$ F = \frac{dV}{dr} = 4\varepsilon\left[-2n\left(\frac{\sigma^{2n}}{r^{2n+1}}\right) + n\left(\frac{\sigma^n}{r^{2n+1}}\right)\right] $$
+            </p>
+        </div>
+
+        <div style="text-align: center; margin-top: 20px;">
+            <img src="Images/Forces.png" alt="Description of the image" style="max-width: 50%; height: auto;">
+        </div>
+
+        <div class="videos" style="display: flex; justify-content: space-around; text-align: center;">
+            <div style="max-width: 45%; margin: 10px;">
+                <h2 style="font-size: 1.2em;">Aggregation using 16 AUVs inside a square boundary</h2>
+                <video controls style="width: 100%; height: auto;">
+                    <source src="Videos/Aggregation.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="links">
+                    <a href="https://drive.google.com/file/d/1gvD8SlYGDpqKb1Qagcyr6S5mC70ELUec/view?usp=sharing" target="_blank">Download Video</a>
+                </div>
+            </div>
+            <div style="max-width: 45%; margin: 10px;">
+                <h2 style="font-size: 1.2em;">Dispersion using 16 AUVs inside a square boundary</h2>
+                <video controls style="width: 100%; height: auto;">
+                    <source src="Videos/Dispersion.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="links">
+                    <a href="https://drive.google.com/file/d/1ScYbKrkACsOV50BlK3L_imkKiRjoQO-9/view?usp=sharing" target="_blank">Download Video</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
