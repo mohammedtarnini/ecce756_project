@@ -53,7 +53,7 @@
 - \( \Delta \theta = \frac{x_c}{w_f} \cdot FOV_h \)
 
 ### Lennard-Jones Potential Function
-![Forces](Forces_on_AUVs.png)
+![Forces](forces_on_AUVs.png)
 
 - \( V = 4\varepsilon \left[ \left( \frac{\sigma}{r} \right)^{2n} - \left( \frac{\sigma}{r} \right)^n \right] \)
 - \( F = \frac{dV}{dr} = 4\varepsilon \left[ -2n\left( \frac{\sigma^{2n}}{r^{2n+1}} \right) + n\left( \frac{\sigma^n}{r^{2n+1}} \right) \right] \)
